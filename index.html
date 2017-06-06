@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1">
-  <title>MDPUB: Markdown Wechat Public</title>
+  <title>MDPUB: Markdown Editor for Wechat Media Platform</title>
   <link rel="stylesheet" href="css/custom-ui.css"/>
   <link rel="stylesheet" href="css/normalize.css"/>
   <link rel="stylesheet" href="css/style.css"/>
@@ -15,6 +15,8 @@
   <script src="js/showdown-plugins/showdown-prettify-for-wechat.js"></script>
   <script src="js/showdown-plugins/showdown-github-task-list.js"></script>
   <script src="js/showdown-plugins/showdown-footnote.js"></script>
+  <script src="js/showdown-plugins/showdown-figure.js"></script>
+  <script src="js/showdown-plugins/showdown-toc.js"></script>
   <script src="js/jquery-3.1.1.js"></script>
   <script src="js/clipboard.min.js"></script>
 
@@ -26,7 +28,7 @@
   <script>
     (function () {
       var input, output;
-      var converter = new showdown.Converter({extensions: ['prettify', 'tasklist', 'footnote'], tables: true});
+      var converter = new showdown.Converter({extensions: ['prettify', 'tasklist', 'footnote', 'figure', 'toc'], tables: true});
 
       function updateOutput() {
         output.innerHTML = converter.makeHtml(input.value);
@@ -60,7 +62,11 @@ GitHub 地址：[https://github.com/phodal/mdpub](https://github.com/phodal/mdpu
 
 更多精彩内容请<ruby>关注<rt>扫码</rt></ruby>：
 
-![Phodal's Wechat](http://articles.phodal.com/qrcode.jpg)
+![图注：Phodal's Wechat](http://articles.phodal.com/qrcode.jpg)
+
+### 目录示例：
+
+[toc]
 
 ### 一些示例
 

@@ -1,3 +1,23 @@
+h1, h2, h3, h4, h5, h6 {
+  padding: 2em 0 1em 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
 .prettyprint {
   font-family: Consolas, Menlo, Courier, monospace;
 }
@@ -49,6 +69,7 @@ table tr:nth-child(2n) {
   margin: 0 10px;
   top: 4px;
   position: relative;
+  display: inline-block;
 }
 
 .super {
@@ -125,4 +146,16 @@ ruby {
 ruby rt {
   font-style: italic;
   background-color: rgba(67, 193, 105, 0.2);
+}
+
+figcaption {
+  text-align: center;
+  font-size: 12px;
+  padding: 8px;
+  color: #ccc;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
 }
